@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>landing-company</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container header__container">
 			<a class="header__logo">Company</a>
 			<div class="header__right">
-				<button class="header__search" aria-label="Search"></button>
+				<button class="btn-reset header__search" aria-label="Search">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="9.76657" cy="9.76659" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
 				<nav class="header__nav nav">
-					<ul class="nav__list">
+					<ul class="list-reset nav__list">
 						<li class="nav__item">
 							<a href="" class="nav__link">Portfolio</a>
 						</li>
@@ -38,7 +47,8 @@
 		<section class="hero">
 			<div class="container">
 				<h1 class="hero__title">We&nbsp;produce the best products</h1>
-				<p class="hero__text">Mattis quam, lectus et&nbsp;justo amet, tortor, lectus dapibus est. Habitasse efficitur sodales vel est.</p>
+				<p class="hero__text">Mattis quam, lectus et&nbsp;justo amet, tortor, lectus dapibus est. Habitasse efficitur
+					sodales vel est.</p>
 				<button class="btn btn--light">Button</button>
 			</div>
 		</section>
@@ -69,35 +79,40 @@
 					</div>
 					<div class="about__col">
 						<h2 class="about__title">
-							Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio. Tempus leo, dictum.
+							Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio. Tempus leo,
+							dictum.
 						</h2>
 						<div class="about__text">
 							<p class="about__descr">
-								Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio. Tempus leo, dictum. Sit mattis mattis lorem cursus velit sit sed et&nbsp;vitae quam, sed nulla dapibus venenatis odio.
+								Amet, mattis dapibus malesuada arcu dapibus nec efficitur et&nbsp;dictum. In&nbsp;sit odio. Tempus leo,
+								dictum. Sit mattis mattis lorem cursus velit sit sed et&nbsp;vitae quam, sed nulla dapibus venenatis
+								odio.
 							</p>
 							<p class="about__descr">
-								Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et&nbsp;quam, ultricies. Dictum. Ipsum sodales sit id&nbsp;nec sed sodales mattis mollis quis, pellentesque habitasse&nbsp;ex.
+								Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et&nbsp;quam, ultricies. Dictum. Ipsum
+								sodales sit id&nbsp;nec sed sodales mattis mollis quis, pellentesque habitasse&nbsp;ex.
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="about__video">
 					<video src=""></video>
-					<button class="about__play" aria-label="Play Video"></button>
+					<button class="btn-reset about__play" aria-label="Play Video"></button>
 				</div>
 			</div>
 		</section>
 		<section class="portfolio">
 			<h2 class="visually-hidden">portfolio</h2>
 			<div class="container">
-				<ul class="portfolio__list">
+				<ul class="list-reset portfolio__list">
 					<li class="portfolio-item">
 						<div class="portfolio-item__col">
 							<h3 class="portfolio-item__title">Et odio</h3>
 							<p class="portfolio-item__descr">
-								Mauris eget nec nulla dolor&nbsp;ex. Sodales luctus pellentesque cras ornare lorem luctus lectus sed consectetur quam, est. Libero, odi
+								Mauris eget nec nulla dolor&nbsp;ex. Sodales luctus pellentesque cras ornare lorem luctus lectus sed
+								consectetur quam, est. Libero, odi
 							</p>
-							<button class="btn btn-dark">Button</button>
+							<button class="btn-reset btn btn-dark">Button</button>
 						</div>
 						<div class="portfolio-item__col">
 							<img src="" alt="Portfolio Et odio" class="portfolio-item__image">
@@ -108,9 +123,10 @@
 						<div class="portfolio-item__col">
 							<h3 class="portfolio-item__title">Integer dapibus dictum</h3>
 							<p class="portfolio-item__descr">
-								it&nbsp;pulvinar tempus amet dolor dui vulputate tortor, luctus lorem in&nbsp;nunc eleifend ipsum justo et&nbsp;venenatis dictumst.
+								it&nbsp;pulvinar tempus amet dolor dui vulputate tortor, luctus lorem in&nbsp;nunc eleifend ipsum justo
+								et&nbsp;venenatis dictumst.
 							</p>
-							<button class="btn btn-dark">Button</button>
+							<button class="btn-reset btn btn-dark">Button</button>
 						</div>
 						<div class="portfolio-item__col">
 							<img src="" alt="" class="portfolio-item__image">
@@ -126,7 +142,9 @@
 				</h2>
 				<blockquote class="quote__content">
 					<p class="quote__text">
-						Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies. Sapien est. Dictumst. Sapien habitasse interdum in&nbsp;amet, lectus molestie vel&nbsp;ut. Malesuada efficitur mattis id&nbsp;mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit.
+						Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
+						Sapien est. Dictumst. Sapien habitasse interdum in&nbsp;amet, lectus molestie vel&nbsp;ut. Malesuada
+						efficitur mattis id&nbsp;mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit.
 					</p>
 					<cite class="quote__author">
 						Alex Lee / <span>Co-founder & SEO</span>
@@ -138,7 +156,7 @@
 			<h2 class="visually-hidden">Services</h2>
 			<img src="" class="services__image" aria-hidden="true">
 			<div class="container">
-				<ul class="services__list">
+				<ul class="list-reset services__list">
 					<li class="services-item">
 						<div class="services-item__col">
 							<h3 class="services-item__title">
@@ -147,7 +165,8 @@
 						</div>
 						<div class="services-item__col">
 							<p class="services-item__descr">
-								Quam, tortor, interdum consectetur eleifend integer&nbsp;et. Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
+								Quam, tortor, interdum consectetur eleifend integer&nbsp;et. Accumsan vulputate efficitur in&nbsp;amet,
+								vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
 							</p>
 						</div>
 					</li>
@@ -159,7 +178,8 @@
 						</div>
 						<div class="services-item__col">
 							<p class="services-item__descr">
-								Malesuada efficitur mattis id&nbsp;mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit. Pulvinar sed quam, arcu pulvinar nisi ipsum quis, sodales molestie&nbsp;ex.
+								Malesuada efficitur mattis id&nbsp;mattis aenean interdum lectus quam, dapibus nec augue vulputate leo,
+								ornare elit. Pulvinar sed quam, arcu pulvinar nisi ipsum quis, sodales molestie&nbsp;ex.
 							</p>
 						</div>
 					</li>
@@ -171,7 +191,8 @@
 						</div>
 						<div class="services-item__col">
 							<p class="services-item__descr">
-								Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris non orci, sed elit. Cursus ex. Aenean ipsum dolor augue tempus et&nbsp;molestie ipsum adipiscing leo, sit interdum venenatis odio.
+								Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris non orci, sed elit. Cursus ex.
+								Aenean ipsum dolor augue tempus et&nbsp;molestie ipsum adipiscing leo, sit interdum venenatis odio.
 							</p>
 						</div>
 					</li>
@@ -183,11 +204,12 @@
 						</div>
 						<div class="services-item__col">
 							<p class="services-item__descr">
-								Quam, tortor, interdum consectetur eleifend integer&nbsp;et. Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
+								Quam, tortor, interdum consectetur eleifend integer&nbsp;et. Accumsan vulputate efficitur in&nbsp;amet,
+								vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
 							</p>
 						</div>
 					</li>
-					
+
 				</ul>
 			</div>
 		</section>
@@ -199,7 +221,7 @@
 				<address class="footer__address">
 					Dorivit BV, Monitorweg&nbsp;1, Almere 1322BJ, Netherlands
 				</address>
-				<ul class="footer__social social">
+				<ul class="list-reset footer__social social">
 					<li class="social__item">
 						<a href="" class="social__link" target="_blank" aria-label="Facebook"></a>
 					</li>
@@ -217,10 +239,11 @@
 				</h2>
 				<form action="#" class="footer__form">
 					<input type="email" class="footer__input" name="email" placeholder="E-mail">
-					<button class="footer__btn" aria-label="Send E-mail"></button>
+					<button class="btn-reset footer__btn" aria-label="Send E-mail"></button>
 				</form>
 			</div>
 		</div>
 	</footer>
 </body>
+
 </html>

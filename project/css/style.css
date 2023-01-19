@@ -1,0 +1,153 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	min-width: 100%;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/InterBold.woff2) format('woff2');
+	font-display: srap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/InterSemiBold.woff2) format('woff2');
+	font-display: srap;
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/InterMedium.woff2) format('woff2');
+	font-display: srap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/InterRegular.woff2) format('woff2');
+	font-display: srap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/InterLight.woff2) format('woff2');
+	font-display: srap;
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+:root {
+	--color-white: #fff;
+	--color-grey: #838383;
+	--color-darkgrey: #1d1d1f;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.btn-reset {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.logo {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 130%;
+	color: var(--color-white);
+}
+
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 35px;
+}
+
+.nav__link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--color-white);
+}
+
+.header__search {
+	width: 24px;
+	height: 24px;
+	margin-right: 35px;
+}
+
+.header__search svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero {
+	margin-top: 400px;
+	background-image: url(../img/hero-cover.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hero__title {
+	margin-top: 0;
+}
