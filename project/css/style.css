@@ -93,10 +93,24 @@ body {
 	color: var(--color-white);
 }
 
+.btn {
+	padding: 20px 0;
+	min-width: 180px;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 21px;
+	text-align: center;
+	color: var(--color-darkgrey);
+	background-color: var(--color-white);
+}
+
+
+
 .header {
 	position: absolute;
 	left: 0;
 	top: 0;
+	padding: 39px 0;
 	width: 100%;
 }
 
@@ -141,7 +155,10 @@ body {
 }
 
 .hero {
+	padding-top: calc(120px + 150px);
 	margin-top: 400px;
+	height: 100vh;
+	min-height: 800px;
 	background-image: url(../img/hero-cover.jpg);
 	background-position: center;
 	background-size: cover;
@@ -150,4 +167,21 @@ body {
 
 .hero__title {
 	margin-top: 0;
+	margin-bottom: 30px;
+	max-width: 936px;
+	font-weight: 600;
+	font-size: 96px;
+	line-height: 116px;
+	color: var(--color-white);
 }
+
+.hero__text {
+	margin: 0;
+	margin-bottom: 50px;
+	max-width: 468px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--color-white);
+}
+
