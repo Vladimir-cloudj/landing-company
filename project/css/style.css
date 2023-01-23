@@ -67,6 +67,17 @@ body {
 	--color-darkgrey: #1d1d1f;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	bottom: 0;
+	clip: rect(0 0 0 0);
+}
+
 .container {
 	max-width: 1230px;
 	padding: 0 15px;
@@ -183,5 +194,51 @@ body {
 	font-size: 16px;
 	line-height: 150%;
 	color: var(--color-white);
+}
+
+.about__top {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 60px;
+	padding-top: 190px;
+}
+
+.about__item:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+.completed__value {
+	font-weight: 300;
+	font-size: 64px;
+	line-height: 140%;
+	color: var(--color-darkgrey);
+}
+
+.completed__descr {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--color-grey);
+}
+
+.about__title {
+	margin: 0;
+	margin-bottom: 60px;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 140%;
+	color: var(--color-darkgrey);
+}
+
+.about__descr {
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--color-darkgrey);
+}
+
+.about__descr:not(:last-child) {
+	margin-bottom: 30px;
 }
 
