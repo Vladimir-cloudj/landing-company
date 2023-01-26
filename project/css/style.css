@@ -65,6 +65,8 @@ body {
 	--color-white: #fff;
 	--color-grey: #838383;
 	--color-darkgrey: #1d1d1f;
+
+	--offset: 190px;
 }
 
 .visually-hidden {
@@ -105,6 +107,7 @@ body {
 }
 
 .btn {
+	border: none;
 	padding: 20px 0;
 	min-width: 180px;
 	font-weight: 600;
@@ -210,8 +213,8 @@ body {
 }
 
 .about__top {
-	padding-top: 190px;
-	margin-bottom: 190px;
+	padding-top: var(--offset);
+	margin-bottom: var(--offset);
 }
 
 .about__item:not(:last-child) {
@@ -288,8 +291,8 @@ body {
 }
 
 .portfolio {
-	padding-top: 190px;
-	padding-bottom: 190px;
+	padding-top: var(--offset);
+	padding-bottom: var(--offset);
 }
 
 .portfolio-item:not(:last-child) {
@@ -336,7 +339,7 @@ body {
 }
 
 .quote {
-	padding-bottom: 190px;
+	padding-bottom: var(--offset);
 }
 
 .quote__title {
@@ -375,10 +378,14 @@ body {
 	color: var(--color-grey);
 }
 
+.services {
+	padding-bottom: var(--offset);
+}
+
 .services__image {
 	width: 100%;
 	height: 900px;
-	margin-bottom: 190px;
+	margin-bottom: var(--offset);
 	object-fit: cover;
 }
 
