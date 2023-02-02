@@ -114,17 +114,24 @@ body {
 	font-size: 17px;
 	line-height: 21px;
 	text-align: center;
+	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .btn--light {
 	color: var(--color-darkgrey);
 	background-color: var(--color-white);
 }
-
+.btn--light:hover {
+	color: var(--color-white);
+	background-color: var(--color-darkgrey);
+}
 .btn--dark {
 	color: var(--color-white);
 	background-color: var(--color-darkgrey);
-
+}
+.btn--dark:hover {
+	color: var(--color-darkgrey);
+	background-color: var(--color-white);
 }
 
 .grid {
@@ -166,26 +173,35 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	color: var(--color-white);
+	transition: color 0.3s ease-in-out;
 }
-
+.nav__link:hover {
+	color: var(--color-grey);
+}
 .header__search {
 	width: 24px;
 	height: 24px;
 	margin-right: 35px;
+	color: var(--color-white);
+	transition: color 0.3s ease-in-out;
 }
 
 .header__search svg {
 	display: block;
 	width: 100%;
 	height: 100%;
+	stroke: currentColor;
 	object-fit: cover;
+}
+.header__search:hover {
+	color: var(--color-grey);
 }
 
 .hero {
 	padding-top: calc(120px + 150px);
-	/* margin-top: 400px; */
+	padding-bottom: 40px;
 	height: 100vh;
-	min-height: 800px;
+	min-height: 900px;
 	background-image: url(../img/hero-cover.jpg);
 	background-position: center;
 	background-size: cover;
@@ -277,6 +293,8 @@ body {
 	width: 100px;
 	height: 100px;
 	transform: translate(-50%, -50%);
+	color: var(--color-white);
+	transition: color 0.3s ease-in-out;
 }
 
 .about__play-hidden {
@@ -289,7 +307,12 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-
+.about__play circle {
+	fill: currentColor;
+}
+.about__play:hover {
+	color: var(--color-grey);
+}
 .portfolio {
 	padding-top: var(--offset);
 	padding-bottom: var(--offset);
@@ -442,6 +465,8 @@ body {
 	display: block;
 	width: 40px;
 	height: 40px;
+	color: var(--color-white);
+	transition: color 0.3s ease-in-out;
 }
 
 .social__link svg {
@@ -449,8 +474,11 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	fill: currentColor;
 }
-
+.social__link:hover {
+	color: var(--color-grey);
+}
 .footer__title {
 	margin: 0;
 	margin-bottom: 10px;
@@ -498,3 +526,4 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
+
